@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface test : UIView
+- (void)rotate:(CGFloat)rotate;
 
 @end
