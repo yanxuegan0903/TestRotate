@@ -9,7 +9,9 @@
 #import "test.h"
 
 @interface test ()
-
+{
+    CGFloat _angle;
+}
 @property (nonatomic, strong) UILabel *label1;
 @property (nonatomic, strong) UILabel *label2;
 @property (nonatomic, strong) UILabel *label3;
@@ -106,9 +108,9 @@
 
 
 - (void)rotate:(CGFloat)rotate{
+    _angle += rotate;
     
-    self.transform = CGAffineTransformMakeRotation(M_PI_2);
-    self.baseView.frame = CGRectMake(0, 0, 568, 320);
+    self.transform = CGAffineTransformMakeRotation(_angle);
     
     [self setNeedsLayout];
     
