@@ -1,0 +1,12 @@
+
+
+
+import	 	:     push    本地代码push到远程仓库
+
+
+update   	:     fetch   检查本地代码和远程代码是否一致，不一致则merge
+
+
+check out 	:     pull/fetch    将远程代码拉到本地，
+
+	
